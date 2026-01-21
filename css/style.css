@@ -5,14 +5,14 @@
 body{
     padding: 0;
     margin:0;
-    background-image: url("../assets/img/backgroundMainMenu.jpg");
-
+   
 }
 
 .mainEnter{
     width: 5000px;
     height: 500px;
-   
+    background-image: url("../assets/img/backgroundMainMenu.jpg");
+
     z-index: 0;
    
 }
