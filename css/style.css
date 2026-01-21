@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto',sans-serif;
 }
 
 body{
@@ -8,11 +10,73 @@ body{
    
 }
 
+header{
+    background-color: white;
+    padding: 30px;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: center;
+}
+
+nav a {
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: center;
+    font-size: 25px;
+  
+}
+
+#mainLink{
+    position: relative;
+    right: 680px;
+    font-size: 40px;
+}
+
+#serviciosLink{
+    position: relative;
+    left:100px;
+}
+
+#reservasLink{
+ position: relative;
+    left:100px;
+}
+
+#contactoLink{
+ position: relative;
+    left:100px;
+}
+
+.cuenta{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-self: flex-end;
+    align-content: center;
+    gap:20px;
+    bottom: 30px;
+    right: 40px;
+
+}
+
+.cuenta a{
+    text-decoration: none;
+    color:black;
+    padding: 5px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
 .mainEnter{
     width: 5000px;
     height: 500px;
     background-image: url("../assets/img/backgroundMainMenu.jpg");
-
-    z-index: 0;
+    background-size: auto;
+    
    
 }
