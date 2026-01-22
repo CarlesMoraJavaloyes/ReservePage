@@ -12,18 +12,19 @@ body{
 
 header{
     background-color: white;
-    padding: 30px;
-
+    margin-top: 20px;
+    padding: 1px;
 }
 
 nav{
+    
     display: flex;
     flex-direction: row;
     gap:20px;
     justify-content: center;
 }
 
-nav a {
+header nav a {
     color:black;
     text-decoration: none;
     font-weight: bold;
@@ -73,10 +74,93 @@ nav a {
     border: 1px solid black;
 }
 .mainEnter{
-    width: 5000px;
-    height: 500px;
+    width: 1890px;
+    height: 800px;
     background-image: url("../assets/img/backgroundMainMenu.jpg");
     background-size: auto;
     
    
+}
+
+.mainEnter h1{
+    position: relative;
+    justify-self: center;
+    align-items: center;
+    top: 200px;
+    right: 200px;
+    color:Black;
+    width: 800px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.mainEnter h1 span{
+    color:blue;
+}
+
+.mainEnter p{
+    position: relative;
+    top: 300px;
+    
+    font-size: 30px;
+
+}
+
+
+main{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: center;
+    background-color: bisque;
+}
+
+ h2{
+    font-size: 50px;
+    margin-top:30px;
+    justify-self:center;
+    position: relative;
+   
+
+}
+
+.demandado{
+   border: 4px dotted black;
+   border-radius: 30px;
+   padding: 10px;
+   width: 304px;
+  
+}
+
+.vehicleTipo {
+   border-bottom: 3px solid white;
+}
+
+article div img{
+    border-radius: 30px;
+    justify-self: center;
+}
+
+
+.footer{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+   
+    padding: 10px;
+}
+
+.copyright{
+   color:white;
+}
+
+.policy nav a{
+    position: relative;
+    top: 10px;
+    left: 900px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: right;
+    color:white;
 }
