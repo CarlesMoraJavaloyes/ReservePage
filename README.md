@@ -11,6 +11,7 @@ Este página web se trata de un página de reserva de vehículos como helicopter
     - Quitar el párrafo de la intro o una nueva solución para ello
     - Mejorar la forma de recibir los servicicios 
     - Terminar las news 
+    - Cuando recargas la página, aparecer arriba
 
 
   

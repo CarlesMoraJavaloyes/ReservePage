@@ -118,7 +118,7 @@ header nav a {
     border: 2px solid black;
     border-radius: 30px;
     padding: 10px;
-    animation: deslizar 6s linear 1 forwards ;
+    animation: deslizar 6s linear 0 forwards ;
 }
 
 
@@ -157,8 +157,35 @@ article div img{
     justify-self: center;
 }
 
-.news h4{
-    
+.space{
+    background-color: white;
+    padding: 20px;
+}
+
+
+aside{
+    background-color: blue;
+    padding: 30px;
+}
+
+.aside{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+ 
+}
+
+.news{
+    border: 2px solid pink;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.news h2{
+    color:WHITE;
     line-height: 10px;
     font-weight: lighter;
 }
