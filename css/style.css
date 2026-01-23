@@ -2,12 +2,17 @@
 
 *{
     font-family: 'Roboto',sans-serif;
+    animation: introPage 2s ease 1 ;  
+
 }
 
 body{
     padding: 0;
     margin:0;
-   
+}
+
+a{
+    transition: all 1s linear;
 }
 
 header{
@@ -30,7 +35,7 @@ header nav a {
     font-weight: bold;
     align-self: center;
     font-size: 25px;
-  
+   
 }
 
 #mainLink{
@@ -71,7 +76,8 @@ header nav a {
     color:black;
     padding: 5px;
     border-radius: 30px;
-    border: 1px solid black;
+    font-size: 20px;
+    border: 2px solid black;
 }
 .mainEnter{
     width: 1890px;
@@ -86,7 +92,7 @@ header nav a {
     position: relative;
     justify-self: center;
     align-items: center;
-    top: 200px;
+    top: 300px;
     right: 200px;
     color:Black;
     width: 800px;
@@ -101,9 +107,18 @@ header nav a {
 .mainEnter p{
     position: relative;
     top: 300px;
-    
+    margin-left: 60px;
+    width: 800px;
     font-size: 30px;
+    color:gold;
+}
 
+.introP{
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    animation: deslizar 6s linear 1 forwards ;
 }
 
 
@@ -169,4 +184,28 @@ article div img{
     align-items: center;
     justify-content: right;
     color:white;
+}
+
+
+/*Animations*/
+
+@keyframes introPage {
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+
+@keyframes deslizar {
+    0%{left: 0;}
+    50%{left: 50%;}
+    100%{left:0;}
+    
+    
+}
+
+
+/*Hover*/
+a:hover{
+    text-decoration: underline gold ;
+    font-weight: bold;
+    transition: none;
 }
