@@ -13,13 +13,20 @@ body{
 
 a{
     transition: all 1s linear;
+    text-decoration: none;
 }
 
 header{
     background-color: white;
     margin-top: 20px;
     padding: 1px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+  
 }
+
+
 
 nav{
     
@@ -27,6 +34,7 @@ nav{
     flex-direction: row;
     gap:20px;
     justify-content: center;
+   
 }
 
 header nav a {
@@ -129,19 +137,18 @@ main{
     gap:20px;
     justify-content: center;
     background-color: bisque;
+   
 }
 
- h2{
+h2{
     font-size: 50px;
     margin-top:30px;
     justify-self:center;
     position: relative;
-   
-
 }
 
 .demandado{
-   border: 4px dotted black;
+   
    border-radius: 30px;
    padding: 10px;
    width: 304px;
@@ -214,6 +221,107 @@ aside{
 }
 
 
+
+
+/*CONTACTO Y RESERVA.HTMl*/
+
+#contactoDiv{
+   width: 1646px; 
+
+}
+
+.mainContacto{
+    position: relative;
+    height: 2000px;
+    width: 1646px; 
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-template-areas:   'intro'
+                         'subTittle'
+                        'subImg'
+                        'form';
+}
+
+.intro{
+    grid-area: 'intro';
+     font-size: 60px;
+    font-weight: bold;
+    position: relative;
+    left: 100px;
+    width: 400px;
+}
+
+.intro span{
+    color:goldenrod;
+}
+
+.subTittle{
+    grid-area: 'subTittle';
+    position: relative;
+    left: 500px;
+    font-size: 30px;
+    width: 600px;
+
+}
+
+.contactImg{
+    grid-area: 'subImg';
+}
+
+.contactImg img{
+    position: relative;
+    width: 1500px;
+    left: 200px;
+    justify-self: center;
+}
+
+.formulario{
+    grid-area: 'form';
+    position: relative;
+    justify-content: center;
+    left: 700px;
+    width: 700px; 
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+    justify-content: center;
+}
+
+input{
+    border:none;
+    outline:none;
+    border-bottom: 2px solid gold;
+    font-weight: 100;
+
+}
+
+.submit{
+    color:white;
+    background-color: goldenrod;
+}
+
+
+
+.formulario h1{
+    font-size: 110px;
+    color:goldenrod;
+    font-weight: 100;
+    
+}
+
+.formulario a{
+    color:gold;
+}
+
+
+
 /*Animations*/
 
 @keyframes introPage {
@@ -229,10 +337,15 @@ aside{
     
 }
 
+@keyframes moveTittle {
+   
+}
+
 
 /*Hover*/
 a:hover{
     text-decoration: underline gold ;
     font-weight: bold;
-    transition: none;
+    font-size: 20px;
+
 }
