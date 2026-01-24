@@ -307,6 +307,13 @@ input{
     background-color: goldenrod;
 }
 
+button{
+    color:white;
+    height: 30px;
+    background-color: goldenrod;
+    border-radius: 20px;
+}
+
 
 
 .formulario h1{
