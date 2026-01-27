@@ -7,10 +7,15 @@
 }
 
 :root{
-
-
-
-    
+    --color-bg: #0f1220;
+    --color-text: #eef2ff;
+    --color-primary: #7c3aed;
+    --color-accent: #22c55e;
+    --space-1: 8px;
+    --space-2: 16px;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(0,0,0,.25);
+    --dur: 180ms;
 }
 
 body{
@@ -41,6 +46,7 @@ nav{
     flex-direction: row;
     gap:20px;
     justify-content: center;
+   
    
 }
 
@@ -85,6 +91,8 @@ header nav a {
     right: 40px;
 
 }
+
+
 
 .cuenta a{
     text-decoration: none;
