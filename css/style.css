@@ -198,10 +198,16 @@ aside{
     background-color: white;
 }
 
-.news h2{
+.aside h2{
     color:WHITE;
     line-height: 10px;
     font-weight: lighter;
+}
+
+.news >  a {
+    align-items: center;
+    text-decoration: none;
+    color:black;
 }
 
 
