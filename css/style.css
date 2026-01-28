@@ -2,19 +2,43 @@
 
 *{
     font-family: 'Roboto',sans-serif;
+    animation: introPage 2s ease 1 ;  
+
+}
+
+:root{
+    --color-bg: #0f1220;
+    --color-text: #eef2ff;
+    --color-primary: #7c3aed;
+    --color-accent: #22c55e;
+    --space-1: 8px;
+    --space-2: 16px;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(0,0,0,.25);
+    --dur: 180ms;
 }
 
 body{
     padding: 0;
     margin:0;
-   
+}
+
+a{
+    transition: all 1s linear;
+    text-decoration: none;
 }
 
 header{
     background-color: white;
     margin-top: 20px;
     padding: 1px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+  
 }
+
+
 
 nav{
     
@@ -22,6 +46,8 @@ nav{
     flex-direction: row;
     gap:20px;
     justify-content: center;
+   
+   
 }
 
 header nav a {
@@ -30,7 +56,7 @@ header nav a {
     font-weight: bold;
     align-self: center;
     font-size: 25px;
-  
+   
 }
 
 #mainLink{
@@ -66,12 +92,15 @@ header nav a {
 
 }
 
+
+
 .cuenta a{
     text-decoration: none;
     color:black;
     padding: 5px;
     border-radius: 30px;
-    border: 1px solid black;
+    font-size: 20px;
+    border: 2px solid black;
 }
 .mainEnter{
     width: 1890px;
@@ -86,7 +115,7 @@ header nav a {
     position: relative;
     justify-self: center;
     align-items: center;
-    top: 200px;
+    top: 300px;
     right: 200px;
     color:Black;
     width: 800px;
@@ -101,9 +130,18 @@ header nav a {
 .mainEnter p{
     position: relative;
     top: 300px;
-    
+    margin-left: 60px;
+    width: 800px;
     font-size: 30px;
+    color:gold;
+}
 
+.introP{
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    animation: deslizar 6s linear 0 forwards ;
 }
 
 
@@ -114,19 +152,18 @@ main{
     gap:20px;
     justify-content: center;
     background-color: bisque;
+   
 }
 
- h2{
+h2{
     font-size: 50px;
     margin-top:30px;
     justify-self:center;
     position: relative;
-   
-
 }
 
 .demandado{
-   border: 4px dotted black;
+   
    border-radius: 30px;
    padding: 10px;
    width: 304px;
@@ -142,10 +179,43 @@ article div img{
     justify-self: center;
 }
 
-.news h4{
-    
+.space{
+    background-color: white;
+    padding: 20px;
+}
+
+
+aside{
+    background-color: blue;
+    padding: 30px;
+}
+
+.aside{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+ 
+}
+
+.news{
+    border: 2px solid pink;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.aside h2{
+    color:WHITE;
     line-height: 10px;
     font-weight: lighter;
+}
+
+.news >  a {
+    align-items: center;
+    text-decoration: none;
+    color:black;
 }
 
 
@@ -169,4 +239,167 @@ article div img{
     align-items: center;
     justify-content: right;
     color:white;
+}
+
+
+
+
+/*CONTACTO Y RESERVA.HTMl*/
+
+#contactoDiv{
+   width: 1646px; 
+
+}
+
+.mainContacto{
+    position: relative;
+    height: 2000px;
+    width: 1646px; 
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-template-areas:   'intro'
+                         'subTittle'
+                        'subImg'
+                        'form';
+}
+
+.intro{
+    grid-area: 'intro';
+     font-size: 60px;
+    font-weight: bold;
+    position: relative;
+    left: 100px;
+    width: 400px;
+}
+
+.intro span{
+    color:goldenrod;
+}
+
+.subTittle{
+    grid-area: 'subTittle';
+    position: relative;
+    left: 500px;
+    font-size: 30px;
+    width: 600px;
+
+}
+
+.contactImg{
+    grid-area: 'subImg';
+}
+
+.contactImg img{
+    position: relative;
+    width: 1500px;
+    left: 200px;
+    justify-self: center;
+}
+
+.formulario{
+    grid-area: 'form';
+    position: relative;
+    justify-content: center;
+    left: 700px;
+    width: 700px; 
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+    justify-content: center;
+}
+
+input{
+    border:none;
+    outline:none;
+    border-bottom: 2px solid gold;
+    font-weight: 100;
+
+}
+
+.submit{
+    color:white;
+    background-color: goldenrod;
+}
+
+button{
+    color:white;
+    height: 30px;
+    background-color: goldenrod;
+    border-radius: 20px;
+}
+
+
+
+.formulario h1{
+    font-size: 110px;
+    color:goldenrod;
+    font-weight: 100;
+    
+}
+
+.formulario a{
+    color:gold;
+}
+
+
+/*Gracias.hmtl*/
+.opinions{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.opi > h1{
+    border-bottom: 2px solid blue;
+}
+
+.opinion{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    transition: width  4s linear ;
+    
+    
+}
+
+
+
+/*Animations*/
+
+@keyframes introPage {
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+
+@keyframes deslizar {
+    0%{left: 0;}
+    50%{left: 50%;}
+    100%{left:0;}
+    
+    
+}
+
+@keyframes moveTittle {
+   
+}
+
+
+/*Hover*/
+a:hover{
+    text-decoration: underline gold ;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.opinion:hover{
+    width: 300px ;
+    
 }
