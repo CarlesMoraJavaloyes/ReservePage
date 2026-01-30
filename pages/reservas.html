@@ -20,12 +20,87 @@
             <a href="">Sign up</a>
         </div>
     </header>
+    <h2>RESERVAR</h2>
     <main class="mainReservas">
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Servicio
+                        </th>
+                        <th>Estado</th>
+                        <th>Precio</th>
+                        <th>Reservar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                    <tr>
+                        <td>
+                            Global 8000
+                        </td>
+                        <td>
+                            Disponible
+                        </td>
+                        <td>20.000€/día</td>
+                        <td><a href="#formulario">Reservar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Ferrari 488GTB</td>
+                        <td>No disponible</td>
+                        <td>1.000€/día</td>
+                        <td><a href="#formulario">Reservar</a></td>
+                    </tr>
+                    <tr>
+                        <td>H140</td>
+                        <td>Disponible</td>
+                        <td>5.000€/día</td>
+                        <td><a href="#formulario">Reservar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Astondoa 677</td>
+                        <td>Disponible</td>
+                        <td>10.000€/día</td>
+                        <td><a href="#formulario">Reservar</a></td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+        <div class="galery">
+            <div class="divImg">
+                <img src="../assets/img/astondoaCentury.jpg" alt="AstondoaCentury100">
+            </div>
+            <div class="divImg" >
+                <img src="../assets/img/bombardier.webp" alt="Bombardier8000">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/astondoaYate.jpg" alt="Astondoa677Coupe">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/bombardier2.webp" alt="Bombardier8000">
+
+            </div>
+        </div>
+
+       
 
 
-        <div>
+        <div id="formularioReserva">
             <h1>Formulario </h1>
-            <form action="">
+            <form action="enviado.html">
                 <input type="text" name="name" id="name" placeholder="NOMBRE *">
                 <input type="text" name="apellidos" id="apellidos" placeholder="APELLIDOS *">
                 <input type="tel"name="telefono" id="telefono" placeholder="TELÉFONO *">
@@ -37,7 +112,7 @@
 
                 <input type="checkbox" name="politicaDatos" id="politicaDatos" >
 
-                <input type="submit" name="submit" id="submit">
+                <input type="reset" name="submit" id="submit">
                 
 
 
