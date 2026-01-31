@@ -448,7 +448,21 @@ table{
     padding: 5px;
     width: 600px;
     
+    
     margin-bottom: 10px;
+}
+
+.table{
+    
+    width: 600px;
+    padding: 10px;
+    margin: 10px;
+}
+
+table a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
 }
 thead{
     justify-content: left;
@@ -471,6 +485,13 @@ form{
     justify-content: center;
 }
 
+select{
+   border:none;
+    outline:none;
+    border-bottom: 2px solid gold;
+    font-weight: 100;  
+}
+
 input{
     border:none;
     outline:none;
@@ -489,6 +510,7 @@ button{
     height: 30px;
     background-color: goldenrod;
     border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -502,6 +524,26 @@ button{
 
 #formularioReserva a{
     color:gold;
+}
+
+.allServices{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr      ;
+    gap: 20px;
+}
+
+.gridServicios{
+    justify-content: center;
+    margin: auto;
+
+}
+
+.divService{
+    border: 1px solid black;
+    margin: 10px;
+    width: 600px;
+    height: 600px;
 }
 
 

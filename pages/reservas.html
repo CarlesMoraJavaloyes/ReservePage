@@ -31,7 +31,7 @@
                         </th>
                         <th>Estado</th>
                         <th>Precio</th>
-                        <th>Reservar</th>
+                        <th>Reservación</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,25 +44,25 @@
                             Disponible
                         </td>
                         <td>20.000€/día</td>
-                        <td><a href="#formulario">Reservar</a></td>
+                        <td><a href="#formularioReserva">Reservar</a></td>
                     </tr>
                     <tr>
                         <td>Ferrari 488GTB</td>
                         <td>No disponible</td>
                         <td>1.000€/día</td>
-                        <td><a href="#formulario">Reservar</a></td>
+                        <td><a href="#formularioReserva">Reservar</a></td>
                     </tr>
                     <tr>
                         <td>H140</td>
                         <td>Disponible</td>
                         <td>5.000€/día</td>
-                        <td><a href="#formulario">Reservar</a></td>
+                        <td><a href="#formularioReserva">Reservar</a></td>
                     </tr>
                     <tr>
                         <td>Astondoa 677</td>
                         <td>Disponible</td>
                         <td>10.000€/día</td>
-                        <td><a href="#formulario">Reservar</a></td>
+                        <td><a href="#formularioReserva">Reservar</a></td>
                     </tr>
 
                 </tbody>
@@ -106,13 +106,30 @@
                 <input type="tel"name="telefono" id="telefono" placeholder="TELÉFONO *">
                 <input type="email" name="email" id="email" placeholder="CORREO ELECTRÓNICO *">
                 <input type="text" name="codigoPostal" id="codigoPostal" placeholder="CÓDIGO POSTAL *">
-                <select name="presupuesto" id="presuspuestp"></select>
-                <select name="tipoVehiculo" id="tipoVehiculo"></select>
-                <input type="text" name="consulta" id="consulta">
+                <label for="vehiculo">Vehiculo
+                    
+                </label>
+                <select name="Vehiculo" id="vehiculo">
+                    <option value="bombardier">Global 8000</option>
+                    <option value="ferrari">Ferrari 488 GTB</option>
+                    <option value="airbus">H140</option>
+                    <option value="astondoa">Astondoa 677 coupe</option>
+                </select>
+                <label for="Duración">Duración</label>
+                <select name="tiempo" id="tiempo">
+                    <option value="2h">2 horas</option>
+                    <option value="4h">4 horas</option>
+                    <option value="1d">1 día</option>
+                    <option value="1s">1 semana</option>
+                </select>
+                
+                
+                <label for="politicaDatos">
+                    <input type="checkbox" name="politicaDatos" id="politicaDatos" >
+                    He leído y acepto la <a href="#">Política de Datos</a></label>
+               
 
-                <input type="checkbox" name="politicaDatos" id="politicaDatos" >
-
-                <input type="reset" name="submit" id="submit">
+                <button type="reset" name="submit" id="submit" >Enviar</button>
                 
 
 
