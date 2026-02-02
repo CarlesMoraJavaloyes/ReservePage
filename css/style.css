@@ -7,6 +7,7 @@
 }
 
 :root{
+    --backgorundColor:white;
     --color-bg: #0f1220;
     --color-text: #eef2ff;
     --color-primary: #7c3aed;
@@ -16,6 +17,9 @@
     --radius: 14px;
     --shadow: 0 10px 30px rgba(0,0,0,.25);
     --dur: 180ms;
+    --gapPx:20px;
+    --goldColor:gold;
+     --goldColor:goldenrod;
 }
 
 body{
@@ -31,7 +35,7 @@ a{
 }
 
 header{
-    background-color: white;
+    background-color:var(--backgorundColor);
     margin-top: 20px;
     padding: 1px;
     position: sticky;
@@ -53,10 +57,10 @@ nav{
 }
 
 main{
-    background-color: white;
+    background-color:var(--backgorundColor);
     display: flex;
     flex-direction: row;
-    gap:20px;
+    gap:var(--gapPx);
     justify-content: center;
    
    
@@ -121,8 +125,8 @@ header nav a {
     border-radius: 20px;
     border: 1px solid black;
     transition: width 2s linear;
-    background-color: goldenrod;
-   
+    background-color: var( --goldColor); 
+    box-shadow: 10px 10px 10px var( --goldColor);
 
 }
 
@@ -130,6 +134,8 @@ header nav a {
 
     border-bottom: 1px solid white;
     margin: 0   ;
+   
+   
 }
 
 .pasos >div h1{
@@ -405,7 +411,7 @@ button{
     border: 2px solid black;
     padding: 10px;
     margin: 10px;
-    transition: width  2s linear ;
+    transition: box-shadow 1s linear ;
     
     
 }
@@ -517,7 +523,7 @@ button{
 
 #formularioReserva h1{
     font-size: 110px;
-    color:goldenrod;
+    color:var(--goldColor);
     font-weight: 100;
     
 }
@@ -525,12 +531,19 @@ button{
 #formularioReserva a{
     color:gold;
 }
+#IntroServicios{
+    margin: 30px;
+}
+#IntroServicios h1{
+    color:goldenrod;
+}
 
 .allServices{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr      ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr        ;
     gap: 20px;
+    
 }
 
 .gridServicios{
@@ -544,7 +557,64 @@ button{
     margin: 10px;
     width: 600px;
     height: 600px;
+    box-sizing: border-box;
+    box-shadow: 5px 10px 14px black;
 }
+
+.divService{
+    padding: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 15px black;
+    transition: box-shadow 1s ease-in-out;
+   
+}
+
+.divImgReserve{
+    padding: 10px;
+    
+    
+}
+
+.divService div h3{
+    color:goldenrod;
+    font-size: 20pt;
+}
+
+.divService div h3 p span{
+    color:gold;
+}
+
+.divImgService{
+    z-index: 0;
+    width: auto;
+    height: 300px;
+    background:linear-gradient(to top,blue, gold);
+}
+.divImgService img{
+   
+    height: 200px;
+    width: 400px;
+    justify-self: center;
+}
+
+.divImgService button{
+    top: 150px;
+    
+    z-index: 1;
+    position: relative;
+    
+   
+    justify-content: right;
+   
+}
+
+
+
+.divService:hover{
+    box-shadow: 10px 10px 15px gold;
+}
+
+
 
 
 
@@ -582,7 +652,8 @@ a:hover{
 }
 
 .opinion:hover{
-    width: 250px ;
+   
+    box-shadow: 10px 15px 155px var(--goldColor);
     
 }
 
